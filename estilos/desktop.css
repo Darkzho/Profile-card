@@ -1,0 +1,12 @@
+.background-img .background-img--top {
+    width: 550px;
+    height: 550px;
+    transform: rotate(375deg);
+    top: -145px;
+    left: -380px
+}
+
+.background-img .background-img--bottom {
+    width: 800px;
+    height: 800px;
+}

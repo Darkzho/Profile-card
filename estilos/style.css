@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    background-color: var(--Dark-cyan);
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-img {
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.background-img .background-img--top {
+    background-image: url('../assets/bg-pattern-top.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: -155px;
+    left: -280px;
+    transform: rotate(340deg);
+}
+
+.background-img .background-img--bottom {
+    background-image: url('../assets/bg-pattern-bottom.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 445px;
+    left: 185px;
+    transform: rotate(25deg);
+}
+
+.card-wrapper {
+    margin: 230px auto 0;
+    position: relative;
+    z-index: 10;
+    max-width: 375px;
+    min-width: 330px;
+}
+
+.card-wrapper .card-section--top{
+    width: 100%;
+    height: 145px;
+    background-image: url('../assets/bg-pattern-card.svg');
+    border-radius: 20px 20px 0 0;
+}
+
+.card-wrapper .card-section--image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card-wrapper .card-section--image img{
+    border-radius: 50px;
+    border: 5px solid white;
+    width: 100px;
+    position: absolute;
+    top: -50px
+}
+
+.card-wrapper .card-section--user-data{
+    background-color: white;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    height: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 90%);;
+}
+
+.card-section--user-data h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-section--user-data p {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    color: var(--Dark-grayish-blue);
+}
+
+.card-section--user-data h1 span {
+    margin-left: 10px;
+    font-weight: 400;
+    color: var(--Dark-gray);
+}
+
+.card-section--general--data{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 0 0 20px 20px 
+}
+
+.card-section--general--data .card-data-items {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-data-items h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.card-data-items p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 8px;
+    letter-spacing: 1.5px;
+    color: var(--Dark-grayish-blue);
+}
